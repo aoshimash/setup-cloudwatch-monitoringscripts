@@ -1,7 +1,7 @@
 #!/bin/bash
 
-AWS_ACCESS_KEY_ID=$1
-AWS_SECRET_KEY=$2
+read -p "AWSAccessKeyId: " AWS_ACCESS_KEY_ID
+read -sp "AWSSecretKey: " AWS_SECRET_KEY
 
 SCRIPT_DIR="/monitoring-scripts"
 SCRIPT_ZIP="CloudWatchMonitoringScripts-1.2.2.zip"
